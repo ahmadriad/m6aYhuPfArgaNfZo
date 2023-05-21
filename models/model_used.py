@@ -14,7 +14,7 @@ from sklearn.ensemble import RandomForestClassifier
 from xgboost import XGBClassifier
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import KFold
-
+seed=10
 data = pd.read_csv("C:/Users/97155/Downloads/term-deposit-marketing-2020.csv")
 
 
