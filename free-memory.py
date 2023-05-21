@@ -1,4 +1,4 @@
 def main():
-    pass
+    """check if there is enough memory in the computer""
 
 main()
