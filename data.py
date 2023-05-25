@@ -1,3 +1,15 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import plotly.express as px
+import seaborn as sb
+from sklearn.model_selection import GridSearchCV
+import category_encoders as ce
+from sklearn.preprocessing import LabelEncoder
+
+
+data = pd.read_csv("C:/Users/97155/Downloads/term-deposit-marketing-2020.csv")
+
 def split_data(data):
     label_encoder = LabelEncoder()
     data["y"]=label_encoder.fit_transform(data["y"])
